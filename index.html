@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
   <!------ Include the above in your HEAD tag ---------->
@@ -22,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="#">Projetos</a>
+            <a class="nav-link" onclick="location.href='#section-projetos'">Projetos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Tecnologias</a>
@@ -45,45 +46,136 @@
   <div class="content">
     <h1>Olá, bem vindo(a) ao meu Portifólio!</h1>
     <p>Aqui eu conto um pouco sobre mim e sobre meus principais projetos e desafios!</p>
-    <button class="btn-custom">Vamos começar!</button>
+    <button class="btn-custom" onclick="location.href='#section-projetos'">Vamos começar!</button>
   </div>
 
   <!-- Card Section -->
-  <div class="content">
-    <h2>Meus Projetos</h2>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-md-6 mb-4">
-          <div class="card text-center text-white">
-            <img src="https://webimages.mongodb.com/_com_assets/cms/kuztefjfmcr54smwt-Meta_Blogs.png"
-              class="card-img-top" alt="Project Image">
-            <div class="card-body">
-              <h5 class="card-title">Workshop</h5>
-              <p class="card-text">Compreender as principais diferenças entre paradigma orientado a documentos e
-                relacional. Implementar operações de CRUD. Refletir sobre decisões de design para um banco de dados
-                orientado a documentos. Implementar associações entre objetos. Objetos aninhados. Referências. Realizar
-                consultas com Spring Data e MongoRepository.</p>
-              <a href="https://github.com/bernardomerlo/workshop-spring-boot-mongodb" class="btn btn-custom">Visitar</a>
+  <section id="section-projetos">
+    <div class="content">
+      <div class="container">
+        <h2 class="text-left">Meus Projetos</h2>
+      </div>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card text-center text-white">
+              <img src="https://webimages.mongodb.com/_com_assets/cms/kuztefjfmcr54smwt-Meta_Blogs.png"
+                class="card-img-top" alt="Project Image">
+              <div class="card-body">
+                <h5 class="card-title">Workshop</h5>
+                <h5>Tecnologias usadas:
+                  <span class="tooltip-container">
+                    <i class="fa-brands fa-java"></i>
+                    <span class="tooltip-text">Java</span>
+                  </span>
+                  <span class="tooltip-container">
+                    <i class="fas fa-leaf"></i>
+                    <span class="tooltip-text">Spring Boot</span>
+                  </span>
+                  <span class="tooltip-container">
+                    <i class="fas fa-database"></i>
+                    <span class="tooltip-text">MongoDB</span>
+                  </span>
+                </h5>
+                <p class="card-text">Compreender as principais diferenças entre paradigma orientado a documentos e
+                  relacional. Implementar operações de CRUD.</p>
+                <a href="https://github.com/bernardomerlo/workshop-spring-boot-mongodb"
+                  class="btn btn-custom">Visitar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card text-center text-white">
+              <img
+                src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw"
+                class="card-img-top" alt="Project Image">
+              <div class="card-body">
+                <h5 class="card-title">Aplicação Full-Stack</h5>
+                <h5>Tecnologias usadas:
+                  <span class="tooltip-container">
+                    <i class="fa-brands fa-java"></i>
+                    <span class="tooltip-text">Java</span>
+                  </span>
+                  <span class="tooltip-container">
+                    <i class="fas fa-leaf"></i>
+                    <span class="tooltip-text">Spring Boot</span>
+                  </span>
+                  <span class="tooltip-container">
+                    <i class="fa-brands fa-angular"></i>
+                    <span class="tooltip-text">Angular</span>
+                  </span>
+                </h5>
+                <p class="card-text">De Back-End temos uma API em Spring Boot e MySQL como banco de dados, e de
+                  Front-End,
+                  uma interface feita com Angular 17</p>
+                <a href="https://github.com/bernardomerlo/springboot-angular" class="btn btn-custom">Visitar</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6 mb-4">
-          <div class="card text-center text-white">
-            <img
-              src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://cdn.filestackcontent.com/UDMFGjKOT8m1D8NdDIsw"
-              class="card-img-top" alt="Project Image">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card text-center text-white">
+              <img
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/63/57/c9/6357c907-54d6-8f0f-eb60-6e3e9ff0aeec/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/1200x630wa.png"
+                class="card-img-top" alt="Project Image">
+              <div class="card-body">
+                <h5 class="card-title">Yahtzee</h5>
+                <h5>Tecnologia usada:
+                  <span class="tooltip-container">
+                    <i class="fa-brands fa-java"></i>
+                    <span class="tooltip-text">Java</span>
+                  </span>
+                </h5>
+                <p class="card-text">Fazer o jogo Yahtzee usando conceitos de OO, trabalho
+                  em equipe, versionamento de códigos e planejamento de projetos.</p>
+                <a href="https://github.com/bernardomerlo/Trabalho-Yahtzee" class="btn btn-custom">Visitar</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card text-center text-white">
+              <img src="https://i.ytimg.com/vi/7Sje2ktbL2Q/maxresdefault.jpg" class="card-img-top" alt="Project Image">
+              <div class="card-body">
+                <h5 class="card-title">Xadrez</h5>
+                <h5>Tecnologia usada:
+                  <span class="tooltip-container">
+                    <i class="fa-brands fa-java"></i>
+                    <span class="tooltip-text">Java</span>
+                  </span>
+                </h5>
+                <p class="card-text">Foi feito um jogo de xadrez rodado a partir do terminal do Git (somente por motivos
+                  estéticos, fora isso poderia ser em qualquer terminal),
+                  usando Java e conceitos de OO.</p>
+                <a href="https://github.com/bernardomerlo/chess-system-java" class="btn btn-custom">Visitar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center text-white mx-auto">
+            <img src="/imgs/gerenciador.png" class="card-img-top" alt="Project Image">
             <div class="card-body">
-              <h5 class="card-title">Spring Boot e Angular</h5>
-              <p class="card-text">De Back-End temos uma API em Spring Boot e MySQL como banco de dados, e de Front-End,
-                uma interface feita com Angular 17</p>
-              <a href="https://github.com/bernardomerlo/springboot-angular" class="btn btn-custom">Visitar</a>
+              <h5 class="card-title">Gerenciador de Produtos</h5>
+              <h5>Tecnologia usada:
+                <span class="tooltip-container">
+                  <i class="fa-brands fa-php"></i>
+                  <span class="tooltip-text">PHP</span>
+                </span>
+              </h5>
+              <p class="card-text">Um sistema com Login que é capaz de armazenar os dados de seu produto, com criação de
+                conta, login, logout e sessões.</p>
+              <a href="https://github.com/bernardomerlo/gerenciamento_produtos" class="btn btn-custom">Visitar</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-  </div>
+    </div>
+  </section>
 </body>
 
 </html>
